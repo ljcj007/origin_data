@@ -1,8 +1,0 @@
-#!/usr/bin/env sh
-for argument do
-    case "$argument" in
-        /cygdrive/*) converted=$(cygpath -w "$argument"); shift; set -- "$@" "$converted" ;;
-        *) shift; set -- "$@" "$argument" ;;
-    esac
-done
-exec /cygdrive/c/Users/hh250/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe "$@"
