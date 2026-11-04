@@ -1,2 +1,0 @@
-#!/usr/bin/env sh
-exec /cygdrive/c/Windows/System32/OpenSSH/ssh.exe -F D:/Project/QMC/.remote/ssh_config "$@"
